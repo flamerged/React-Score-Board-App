@@ -1,19 +1,23 @@
 const players = [
     {
         playerName: 'Guil',
-        playerScore: 50
+        playerScore: 50,
+        id: 1
     },
     {
         playerName: 'Treasure',
-        playerScore: 85
+        playerScore: 85,
+        id: 2
     },
     {
         playerName: 'Ashley',
-        playerScore: 95
+        playerScore: 95,
+        id: 3
     },
     {
         playerName: 'James',
-        playerScore: 80
+        playerScore: 80,
+        id: 4
     }
 ];
 
@@ -58,6 +62,7 @@ const App = props => {
                 <Player
                     playerName={player.playerName}
                     playerScore={player.playerScore}
+                    key={player.id.toString()}
                 />
             ))}
         </div>
